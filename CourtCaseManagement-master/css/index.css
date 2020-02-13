@@ -1,0 +1,33 @@
+
+  .navbar,.topnav{
+    background-color: #000000;
+  }
+  
+  .topnav a:hover{
+    background-color: #ffffff;
+  }
+  .topnav a:active{
+    background-color:#000000 ;
+  }
+
+  
+  body{
+    background-image: url("../resource/pexels0.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    
+
+  }
+
+  input {
+    float: right;
+    padding: 10px 0px;
+  }
+
+  .btn{
+    color: white;
+  }
+  .container{
+    padding-top: 10% ;
+  }

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/signup.css" type="text/css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh "
+      crossorigin="anonymous"
+    />
+   
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  
+</head>
+  <body>
+    <div class="container">
+      <h1>Enter Your Credentials Here</h1>
+      <br />
+
+      <!-- Name -->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input
+            id="firstName"
+            class="form-control form-row"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+        </div>
+
+        <div class="form-group col-md-4">
+          <input
+            id="lastName"
+            class="form-control"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <br />
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group" id="gender">
+        <br />
+        <label for="gender">Gender: </label>
+        <br />
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <br />
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <br />
+
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label>
+        <br />
+      </div>
+
+      <!-- Contact info -->
+      <div class="form-group">
+        <br />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            placeholder="Email id"
+            required
+          />
+        </div>
+
+        <br />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="number"
+            type="text"
+            placeholder="Contact Number"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="form-group" id="address">
+        <br />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="city"
+            type="text"
+            placeholder="City"
+            required
+          />
+        </div>
+
+        <div class="col-4">
+          <br />
+          <input
+            class="form-control"
+            id="state"
+            type="text"
+            placeholder="State"
+            required
+          />
+        </div>
+
+        <br />
+      </div>
+
+      <!-- Login credentials -->
+      <br />
+      <div class="form-group" id="loginInfo">
+        <div class="col-4">
+          <input
+            id="userName"
+            class="form-control"
+            type="text"
+            placeholder="Username"
+            required
+          />
+        </div>
+
+        <br />
+        <div class="col-4">
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            placeholder="Password"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
+
+        <br />
+        <div class="col-4">
+          <input
+            class="form-control"
+            type="password"
+            id="r_password"
+            placeholder="Repeat Password"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
+      </div>
+      <br />
+      <div class="form-group">
+        <input type="checkbox" id="TC" required />
+        <label for="TC">I agree to the terms and conditions</label>
+        <br />
+        <br />
+      </div>
+
+      <button
+        class="btn btn-primary "
+        type="submit"
+        onclick="getInfo()"
+        id="submit"
+      >
+        Submit
+        <br>
+      </button>
+    </div>
+    <br />
+    <br />
+    <script src="../js/myScript.js"></script>
+  </body>
+</html>
